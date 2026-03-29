@@ -1,0 +1,144 @@
+{
+  "status": "completed",
+  "results": [
+    {
+      "score": 0.0,
+      "max_score": 7,
+      "pass_rate": 0.0,
+      "task_rewards_by_split": {
+        "base": {
+          "base_1": 0.0,
+          "base_3": 0.0,
+          "base_5": 0.0
+        },
+        "hallucination": {
+          "hallucination_1": 0.0,
+          "hallucination_3": 0.0
+        },
+        "disambiguation": {
+          "disambiguation_1": 0.0,
+          "disambiguation_3": 0.0
+        }
+      },
+      "time_used": 1595.9797368049622,
+      "pass_power_k_scores": {
+        "Pass^1": 0.0
+      },
+      "pass_at_k_scores": {
+        "Pass@1": 0.0
+      },
+      "pass_power_k_scores_by_split": {
+        "base": {
+          "Pass^1": 0.0
+        },
+        "hallucination": {
+          "Pass^1": 0.0
+        },
+        "disambiguation": {
+          "Pass^1": 0.0
+        }
+      },
+      "pass_at_k_scores_by_split": {
+        "base": {
+          "Pass@1": 0.0
+        },
+        "hallucination": {
+          "Pass@1": 0.0
+        },
+        "disambiguation": {
+          "Pass@1": 0.0
+        }
+      },
+      "max_trials": 1,
+      "detailed_results_by_split": {
+        "base": [
+          {
+            "task_id": "base_1",
+            "reward": 0.0,
+            "trial": 0,
+            "reward_info": {},
+            "task": {},
+            "trajectory": [],
+            "user_cost": 0,
+            "total_agent_cost": 0,
+            "total_llm_latency_ms": 0
+          },
+          {
+            "task_id": "base_3",
+            "reward": 0.0,
+            "trial": 0,
+            "reward_info": {},
+            "task": {},
+            "trajectory": [],
+            "user_cost": 0,
+            "total_agent_cost": 0,
+            "total_llm_latency_ms": 0
+          },
+          {
+            "task_id": "base_5",
+            "reward": 0.0,
+            "trial": 0,
+            "reward_info": {},
+            "task": {},
+            "trajectory": [],
+            "user_cost": 0,
+            "total_agent_cost": 0,
+            "total_llm_latency_ms": 0
+          }
+        ],
+        "hallucination": [
+          {
+            "task_id": "hallucination_1",
+            "reward": 0.0,
+            "trial": 0,
+            "reward_info": {},
+            "task": {},
+            "trajectory": [],
+            "user_cost": 0,
+            "total_agent_cost": 0,
+            "total_llm_latency_ms": 0
+          },
+          {
+            "task_id": "hallucination_3",
+            "reward": 0.0,
+            "trial": 0,
+            "reward_info": {},
+            "task": {},
+            "trajectory": [],
+            "user_cost": 0,
+            "total_agent_cost": 0,
+            "total_llm_latency_ms": 0
+          }
+        ],
+        "disambiguation": [
+          {
+            "task_id": "disambiguation_1",
+            "reward": 0.0,
+            "trial": 0,
+            "reward_info": {},
+            "task": {},
+            "trajectory": [],
+            "user_cost": 0,
+            "total_agent_cost": 0,
+            "total_llm_latency_ms": 0
+          },
+          {
+            "task_id": "disambiguation_3",
+            "reward": 0.0,
+            "trial": 0,
+            "reward_info": {},
+            "task": {},
+            "trajectory": [],
+            "user_cost": 0,
+            "total_agent_cost": 0,
+            "total_llm_latency_ms": 0
+          }
+        ]
+      }
+    }
+  ],
+  "participants": {
+    "green": "019d017f-d87a-73b1-a654-1a001b574e92",
+    "agent": "019d397c-4251-7d23-91c8-54339ebea142"
+  }
+}
