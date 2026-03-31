@@ -1,0 +1,81 @@
+{
+  "manifest_version": "0.1.0",
+  "config_schema": {
+    "type": "object",
+    "properties": {
+      "agent_gemini_key": {
+        "type": "string",
+        "secret": true
+      },
+      "green_gemini_api_key": {
+        "type": "string",
+        "secret": true
+      }
+    },
+    "required": [
+      "green_gemini_api_key",
+      "agent_gemini_key"
+    ],
+    "additionalProperties": false
+  },
+  "components": {
+    "gateway": {
+      "manifest": "https://raw.githubusercontent.com/RDI-Foundation/agentbeats-gateway/refs/tags/v0.1/amber-manifest.json5",
+      "config": {
+        "assessment_config": {
+          "topic": "CAR-Bench evaluation tasks",
+          "task_split": "test",
+          "num_trials": 1,
+          "tasks_base_num_tasks": 3,
+          "tasks_hallucination_num_tasks": 2,
+          "tasks_disambiguation_num_tasks": 2,
+          "max_steps": 50
+        },
+        "participant_roles": {
+          "green": "green",
+          "purple1": "agent"
+        },
+        "callback_urls": {
+          "green": "${bindings.green-proxy.url}"
+        }
+      }
+    },
+    "green": {
+      "manifest": "https://raw.githubusercontent.com/RDI-Foundation/car-bench-agentbeats/refs/heads/main/amber/amber-manifest-green.json5",
+      "config": {
+        "gemini_api_key": "${config.green_gemini_api_key}"
+      }
+    },
+    "agent": {
+      "manifest": "https://raw.githubusercontent.com/dmitriyberkutoff/agent-beats-hw/main/manifest.json5",
+      "config": {
+        "gemini_key": "${config.agent_gemini_key}"
+      }
+    }
+  },
+  "bindings": [
+    {
+      "to": "#gateway.green",
+      "from": "#green.a2a"
+    },
+    {
+      "to": "#gateway.purple1",
+      "from": "#agent.a2a"
+    },
+    {
+      "to": "#green.proxy",
+      "from": "#gateway.proxy",
+      "weak": true,
+      "name": "green-proxy"
+    }
+  ],
+  "exports": {
+    "results": "#gateway.results"
+  },
+  "metadata": {
+    "agentbeats_ids": {
+      "green": "019d017f-d87a-73b1-a654-1a001b574e92",
+      "agent": "019d397c-4251-7d23-91c8-54339ebea142"
+    }
+  }
+}
