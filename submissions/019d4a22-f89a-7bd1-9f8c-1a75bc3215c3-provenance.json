@@ -1,0 +1,22 @@
+{
+  "image_digests": {
+    "/agent": "ghcr.io/dmitriyberkutoff/agent-beats-hw@sha256:c53ee5116fa4989dba54bd45c63258bc92f7b73de69fadff222548514df1f359",
+    "/gateway": "ghcr.io/rdi-foundation/agentbeats-gateway@sha256:30f49abcc6f0b14a2498e645cd6f1f7d0e57316f82224ba18f4cad76e08e02a7",
+    "/green": "ghcr.io/car-bench/car-bench-agentbeats-car-bench-evaluator@sha256:909538a653fcf7c21086fcad9985ef15e555e34cc8f5f382a9e507ff303d2a96"
+  },
+  "manifest_digests": {
+    "/": "sha256:UobJF8dQuOorR1zLfoYKDaNtLaQUYWR3dA1uooGnM4Y=",
+    "/agent": "sha256:qUUGUlDjZelGJ1/2V5iwqEsFclPNWVvH4BULGp+MBCo=",
+    "/gateway": "sha256:YWNLWt2Oy0QNqtALcnrq3tH63EZKGzOG1c1xI1EywTw=",
+    "/green": "sha256:X3QIUZbx/Fyc9rWihbqgMZ8Qhz+xo31loHm/danhZp0="
+  },
+  "timestamp": "2026-04-01T17:48:30Z",
+  "github_actions": {
+    "run_url": "https://github.com/RDI-Foundation/car-bench-agentbeats-leaderboard/actions/runs/23862379357",
+    "ref": "refs/pull/50/merge",
+    "sha": "e3ca52b947fe1f63150fbb965d1cef1b187fd162",
+    "repository_url": "https://github.com/RDI-Foundation/car-bench-agentbeats-leaderboard",
+    "workflow_ref": "RDI-Foundation/car-bench-agentbeats-leaderboard/.github/workflows/quick-submit.yml@refs/pull/50/merge",
+    "workflow_sha": "e3ca52b947fe1f63150fbb965d1cef1b187fd162"
+  }
+}
